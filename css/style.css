@@ -1,0 +1,525 @@
+html {
+   /* font-family: 'Dancing Script', cursive; */
+   font-family: 'Noto Sans JP', sans-serif;
+   /* font-family: 'Poppins', sans-serif; */
+}
+
+
+
+
+.news-list{
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+}
+.news-list .item a{
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #CCC;
+  padding: 20px 20px;
+}
+.news-list .item:first-child a{
+  border-top: 1px solid #CCC;
+}
+.news-list .item .date{
+  margin: 0;
+  min-width: 140px;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category{
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category span{
+  background: #999;
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+}
+.news-list .item .title{
+  margin: 0;
+  width: 100%;
+}
+.news-list .item a:hover .title{
+  color: #00F;
+}
+
+@media screen and (max-width: 767px){
+.news-list .item a{
+  flex-wrap: wrap;
+}
+.news-list .item .date{
+  min-width: 100px;
+}
+.news-list .item .title{
+  margin-top: 10px;
+}
+}
+
+/* 装飾 */
+ 
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin: 20px;
+}
+
+
+
+
+
+.img-frame{
+ background-position: center;
+ background-size: cover;
+ border-radius: 10px;
+ height: 450px;
+ display: flex;
+ align-items: center;/*中央に寄せる*/
+ margin-bottom: 50px;
+}
+@media screen and (max-width: 1800px){
+.img-frame{
+ width: 90%;
+ height: 450px;
+}
+.img-01, .img-02, .img-03{
+ position: absolute;
+ width: 97%;
+ height: 450px;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.img-01{
+ background-image: url(../images/試験用.jpg);
+ animation: slide-animation-01 7s infinite;
+}
+.img-02{
+ background-image: url(../images/ネコ.jpg);
+ animation: slide-animation-02 7s infinite;
+}
+.img-03{
+ background-image: url(../images/外見.jpg);
+ animation: slide-animation-03 7s infinite;
+}
+@keyframes slide-animation-01 {
+ 0% {opacity: 1; transform: scale(1.03);}
+ 30% {opacity: 1;}
+ 40% {opacity: 0; transform: scale(1.0);}
+ 90% {opacity: 0}
+100% {opacity: 1; transform: scale(1.03);}
+}
+@keyframes slide-animation-02 {
+ 0% {opacity: 0;}
+ 30% {opacity: 0; transform: scale(1.03);}
+ 40% {opacity: 1;}
+ 60% {opacity: 1;}
+ 70% {opacity: 0; transform: scale(1.0);}
+100% {opacity: 0;}
+}
+@keyframes slide-animation-03 {
+ 0% {opacity: 0;}
+ 60% {opacity: 0; transform: scale(1.0);}
+ 70% {opacity: 1;}
+ 90% {opacity: 1;}
+100% {opacity: 0; transform: scale(1.03);}
+}}
+
+
+
+
+
+
+
+
+
+
+.senn {
+  font-family: "Zen Antique Soft", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width:90%;
+  max-width:1120px;
+  margin: 0 auto;
+  position: relative;
+ }
+
+ .container2 {
+  width:90%;
+  max-width:1120px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 50px;
+ }
+
+ .flex {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+ }
+/* ヘッダー */
+ header {
+   padding: 27px 0;
+ }
+.logo{
+   font-size: 50px;
+   font-weight: 900;
+   letter-spacing: -0.04px;
+}
+.logo span{
+   color: darkblue;
+   
+}
+
+.header_menu li {
+   margin-left: 25px;
+}
+.header_menu li a{
+   transition: .3s;
+}
+.header_menu li a:hover{
+   color: rgb(96, 172, 220);
+   transition: .3s;
+}
+
+.k{
+  font-weight: 670;
+}
+
+
+/* メイン */
+
+#hero::before/*何かを追加することが出来る*/ {
+   content: '';
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0.2;/*透明にする*/
+   z-index: 1; /*重なり順*/
+}
+.hero_inner{
+   z-index: 2;
+   color: #ffffff;
+   width: 100%;
+   text-align: center;
+}
+
+/* 一番最初の画像の下 */
+#concept{
+   margin-bottom: 120px;
+}
+
+.title{
+   font-size: 20px;
+   font-weight: 700;
+   color: black;
+   margin-top: 80px;
+   margin-bottom: 40px;
+}
+#concept{
+   font-size: 30px;
+   font-weight: 700;
+   margin-bottom: 60px;
+}
+
+.column-2{
+   width: 100%;
+}
+
+.text{
+   line-height: 2;/*行間を調整*/
+}
+
+.concept-img{
+   background-image: url(../images/IMG_4944.jpeg);
+   background-position: center;
+   background-size: cover;
+   height: 400px;
+   border-radius: 10px;
+}
+
+.heading{
+  background-image: url(IMG_4498.jpeg);
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  height: 60px;
+  top: 0;
+  left: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fffaf0;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  width: 210px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  padding: 10px;
+  display: block;
+  color: inherit;
+}
+
+.menu-item:hover{
+  box-shadow: 0 4px 8px rgba(38, 18, 137, 0.2);
+  transform: scale(1.03);
+  transition: 0.3s;
+  color: rgb(93, 132, 194);
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+.sushi{
+  background-image: url(../images/ll.jpeg);
+  height: 130px;
+  background-size: cover;
+}
+  
+
+
+.otsukuri{
+  background-image: url(../images/IMG_5011.jpeg);
+  height: 120px;
+  background-size: cover;
+}
+
+.sushitan{
+  background-image: url(../images/お寿司.jpeg);
+  height: 120px;
+  background-size: cover;
+}
+
+
+.ippin{
+  background-image: url(../images/IMG_5012.jpeg);
+  height: 120px;
+  background-size: cover;
+}
+
+
+
+
+.sarada{
+ background-image: url(../images/IMG_5015.jpeg);
+  height: 135px;
+  background-size: cover;
+}
+
+
+.kobachi{
+  background-image: url(../images/IMG_5020.jpeg);
+  height: 130px;
+  background-size: cover;
+}
+
+.gohan{
+  background-image: url(../images/IMG_5016.jpeg);
+  height: 130px;
+  background-size: cover;
+}
+
+.shiru{
+  background-image: url(../images/IMG_5010.jpeg);
+  height: 130px;
+  background-size: cover;
+}
+
+.drink{
+  background-image: url(../images/b.jpeg);
+  height: 125px;
+  background-size: cover;
+}
+.course{
+  background-image: url(../images/IMG_5036.jpeg);
+  height: 135px;
+  background-size: cover;
+}
+.agemono{
+  background-image: url(../images/チキン.jpeg);
+  height: 130px;
+  background-size: cover;
+}
+.recommend{
+  background-image: url(../images/IMG_5035.jpeg);
+  height: 140px;
+  background-size: cover;
+}
+
+footer {
+  margin-top: 60px;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.footer-container h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.info-box {
+  border: 1px solid #a8a2a2;
+  padding: 1rem;
+  width: 220px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.info-box h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.footer-note {
+  text-align: center;
+  color: #918f8f;
+  font-size: 0.9rem;
+}
+
+/*それぞれのメニューのためのやつ*/
+
+/* レスポンシブ対応：全体の幅を%で指定し、最大幅を設定 */
+.menu-container-2 {
+  width: 90%;
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff8e7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* メニュー名と価格の整列をflexで調整 */
+.menu-item-2 {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+  display: flex;
+  flex-direction: row;              /* 横並びに変更 */
+  justify-content: space-between;  /* 左右に配置 */
+  align-items: center;             /* 垂直方向中央揃え */
+}
+
+.item-name-2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;              /* 中央寄せ */
+  flex: 1;                         /* 幅を広げて中央に配置しやすく */
+}
+
+.item-price-2 {
+  font-size: 16px;
+  color: #b05322;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+
+/* タイトルに余白調整 */
+.menu-title-2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #b05322;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0c9a9;
+}
+
+
+@media (max-width: 480px) {
+  .item-name-2 {
+    font-size: 16px;
+  }
+
+  .item-price-2 {
+    font-size: 15px;
+  }
+}
+
+.course-2 {
+  background-image: url(../images/IMG_4979.jpeg);
+  background-size: cover; /* 要素のサイズに合わせて画像を拡大・縮小 */
+  background-position: center; /* 中央寄せで綺麗に見せる */
+  background-repeat: no-repeat; /* 繰り返しを防ぐ */
+  width: 100%; /* 横幅を画面いっぱいに */
+  height: 800px; /* 高さを調整、任意のサイズに変更可能 */
+}
