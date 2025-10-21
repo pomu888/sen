@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pomu888.github.io/sen/sitemap.xml
